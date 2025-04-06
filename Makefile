@@ -11,6 +11,9 @@ update : ./verilog-mode/Makefile
 
 auto_% :
 	make -C $* auto
+delete_% :
+	make -C $* delete
+
 
 DIRS := $(shell ls -d ./case*)
 $(info echo $(DIRS))
