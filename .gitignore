@@ -1,0 +1,12 @@
+_*
+*_
+*_.*
+
+.*
+!.gitignore
+
+
+.vscode
+./verilog-mode
+./trash
+./org
