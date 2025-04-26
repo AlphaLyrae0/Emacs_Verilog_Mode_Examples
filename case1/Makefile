@@ -5,13 +5,15 @@
 
 auto   : $(FILENAME) $(EL_FILE)
 	$(EMACS) -f verilog-batch-auto
+#	sed -i $(FILENAME) -e 's/              (/ (/g'
 delete : $(FILENAME) $(EL_FILE)
 	$(EMACS) -f verilog-batch-delete-auto
 inject : $(FILENAME) $(EL_FILE)
 	$(EMACS) -f verilog-batch-inject-auto
+#	sed -i $(FILENAME) -e 's/              (/ (/g'
+
 diff   : $(FILENAME) $(EL_FILE)
 	$(EMACS) -f verilog-batch-diff-auto
-
 indent : $(FILENAME) $(EL_FILE)
 	$(EMACS) -f verilog-batch-indent
 

@@ -20,13 +20,9 @@ module top
     wire [0:2] [7:0]    sig_g;
     wire [7:0]          sig_h [3];
 
-    sub1 
-    s1 (
-        /*AUTOINST*/);
+    sub1 s1( /*AUTOINST*/);
 
-    sub2
-    s2 (
-        /*AUTOINST*/);
+    sub2 s2( /*AUTOINST*/);
 
 endmodule
 // Local Variables:

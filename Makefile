@@ -16,9 +16,9 @@ delete_% :
 
 
 DIRS := $(shell ls -d ./case*)
-$(info echo $(DIRS))
+#$(info echo $(DIRS))
 delete :
-	for dir in $(DIRS); do make -C $$dir delete; done
+	@for dir in $(DIRS); do make -C $$dir --no-print-directory -s delete; done
 
 clean : 
 	make delete

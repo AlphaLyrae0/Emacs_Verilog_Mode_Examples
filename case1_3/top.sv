@@ -17,24 +17,22 @@ module top (
 
   /*AUTOWIRE*/
 
-  sub1 
-    s1 ( 
-        .sig_a,                       // From Manual Input
-        .sig_h,                       // To Manual Wire
-        // Inputs (Manual)
-        .sig_d  (sig_d/*[7:0].[3]*/), // From AUTOINPUT
-        // Outputs (Manual)
-        .sig_g (sig_g/*[0:2][7:0]*/), // To AUTOWIRE
+  sub1 s1( 
+          .sig_a,                       // From Manual Input
+          .sig_h,                       // To Manual Wire
+          // Inputs (Manual)
+          .sig_d  (sig_d/*[7:0].[3]*/), // From AUTOINPUT
+          // Outputs (Manual)
+          .sig_g (sig_g/*[0:2][7:0]*/), // To AUTOWIRE
         /*AUTOINST*/);
 
-  sub2
-    s2 (
-        .sig_h,                       // From Manual Wire
-        .sig_i,                       // To Manual Output
-        // Inputs (Manual)
-        .sig_g,                       // From AUTOWIRE
-        // Outputs (Manual)
-        .sig_l (sig_l/*[7:0].[3]*/),  // To AUTOOUTPUT
+  sub2 s2(
+          .sig_h,                       // From Manual Wire
+          .sig_i,                       // To Manual Output
+          // Inputs (Manual)
+          .sig_g,                       // From AUTOWIRE
+          // Outputs (Manual)
+          .sig_l (sig_l/*[7:0].[3]*/),  // To AUTOOUTPUT
         /*AUTOINST*/);
 
 endmodule
