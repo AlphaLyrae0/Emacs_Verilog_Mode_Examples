@@ -22,4 +22,5 @@ delete :
 
 clean : 
 	make delete
+	cat case5/top_org.sv > case5/top.sv
 	rm -rf ./verilog-mode
